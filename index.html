@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Agende seu horário na barbearia premium da cidade. Estilo, clássico e excelência no atendimento.">
+    <title>Vintage Barbers | Agendamento Premium</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,500&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Dynamic Background Elements for Aesthetics -->
+    <div class="bg-glow glow-1"></div>
+    <div class="bg-glow glow-2"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="brand">
+                <i class="fa-solid fa-scissors brand-icon"></i>
+                <div class="brand-text">
+                    <span class="brand-name">VINTAGE</span>
+                    <span class="brand-subtitle">BARBERS</span>
+                </div>
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#about">Sobre</a></li>
+            </ul>
+            
+            <a href="#booking" class="btn btn-primary d-none-mobile">Agendar Horário</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero section-padding">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="badge">Experiência Premium</div>
+                <h1 class="hero-title">A Arte da <br><span class="text-gradient">Barbearia Clássica</span></h1>
+                <p class="hero-desc">
+                    Estilo impecável, ambiente premium e atendimento exclusivo para cavalheiros modernos. Descubra a sua melhor versão.
+                </p>
+                <div class="hero-actions">
+                    <a href="#booking" class="btn btn-primary btn-lg">
+                        Começar Agendamento <i class="fa-solid fa-arrow-right btn-icon"></i>
+                    </a>
+                    <a href="#services" class="btn btn-outline btn-lg">Ver Serviços</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="glass-card hero-glass-card">
+                    <div class="card-header">
+                        <div class="card-dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <span class="card-title-sm">Disponibilidade Hoje</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="time-slot available">
+                            <span class="time">14:30</span>
+                            <span class="barber">com Alex</span>
+                            <button class="btn btn-sm btn-primary">Reservar</button>
+                        </div>
+                        <div class="time-slot available">
+                            <span class="time">16:00</span>
+                            <span class="barber">com Bruno</span>
+                            <button class="btn btn-sm btn-primary">Reservar</button>
+                        </div>
+                        <div class="time-slot unavailable">
+                            <span class="time">18:00</span>
+                            <span class="barber">Esgotado</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Nossos Serviços</h2>
+                <p class="section-subtitle">Tudo o que você precisa para manter o visual em dia, com a máxima qualidade e precisão.</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card glass-panel">
+                    <div class="service-icon"><i class="fa-solid fa-scissors"></i></div>
+                    <h3 class="service-name">Corte Clássico</h3>
+                    <p class="service-desc">Corte na tesoura ou máquina, com lavagem, massagem capilar e finalização com produtos premium.</p>
+                    <div class="service-meta">
+                        <span class="service-price">R$ 55</span>
+                        <span class="service-time"><i class="fa-regular fa-clock"></i> 40 min</span>
+                    </div>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card glass-panel">
+                    <div class="service-icon"><i class="fa-solid fa-mattress-pillow"></i></div>
+                    <h3 class="service-name">Barba Tradicional</h3>
+                    <p class="service-desc">Barboterapia completa com toalha quente, espuma aquecida, navalha e balm hidratante.</p>
+                    <div class="service-meta">
+                        <span class="service-price">R$ 45</span>
+                        <span class="service-time"><i class="fa-regular fa-clock"></i> 30 min</span>
+                    </div>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card glass-panel highlight-card">
+                    <div class="popular-badge">Mais Pedido</div>
+                    <div class="service-icon"><i class="fa-solid fa-crown"></i></div>
+                    <h3 class="service-name">Corte & Barba Premium</h3>
+                    <p class="service-desc">O pacote completo. Cabelo e barba impecáveis, tratamento de pele e toalha quente.</p>
+                    <div class="service-meta">
+                        <span class="service-price">R$ 90</span>
+                        <span class="service-time"><i class="fa-regular fa-clock"></i> 1h 15m</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section (Will be populated by JS later, we just need the container) -->
+    <section id="booking" class="booking section-padding">
+        <div class="container">
+            <div class="booking-wrapper glass-panel main-glass-panel">
+                <div class="booking-header">
+                    <h2 class="booking-title">Agende seu Horário</h2>
+                    <p class="booking-subtitle">Escolha o serviço, barbeiro e o melhor horário para você.</p>
+                </div>
+                
+                <!-- Booking Steps UI -->
+                <div class="booking-steps">
+                    <div class="step active" data-step="1">
+                        <div class="step-number">1</div>
+                        <div class="step-label">Serviço</div>
+                    </div>
+                    <div class="step-line"></div>
+                    <div class="step" data-step="2">
+                        <div class="step-number">2</div>
+                        <div class="step-label">Profissional</div>
+                    </div>
+                    <div class="step-line"></div>
+                    <div class="step" data-step="3">
+                        <div class="step-number">3</div>
+                        <div class="step-label">Data e Hora</div>
+                    </div>
+                    <div class="step-line"></div>
+                    <div class="step" data-step="4">
+                        <div class="step-number">4</div>
+                        <div class="step-label">Confirmação</div>
+                    </div>
+                </div>
+
+                <!-- Booking Content (JS injected) -->
+                <div id="booking-container" class="booking-content-area">
+                    <!-- Placeholder text for now -->
+                    <div class="text-center" style="padding: 40px; color: var(--text-muted);">
+                        Carregando sistema de agendamento...
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="brand">
+                        <i class="fa-solid fa-scissors brand-icon"></i>
+                        <div class="brand-text">
+                            <span class="brand-name">VINTAGE</span>
+                        </div>
+                    </a>
+                    <p class="footer-desc">Barbearia clássica para homens modernos. Cuidando da sua aparência desde 2024.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Contato</h4>
+                    <p><i class="fa-solid fa-location-dot"></i> Av. Paulista, 1000 - SP</p>
+                    <p><i class="fa-brands fa-whatsapp"></i> (11) 99999-9999</p>
+                    <p><i class="fa-solid fa-envelope"></i> contato@vintagebarbers.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Vintage Barbers. Todos os direitos reservados. <span>Template White-label.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript -->
+    <script src="js/app.js"></script>
+</body>
+</html>
